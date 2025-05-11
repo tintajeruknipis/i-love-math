@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Love Math</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>I Love Math</h1>
+        <p>Memahami persamaan lingkaran, parabola, elips, dan garis lurus.</p>
+
+        <div class="input-section">
+            <label for="equation">Masukkan Persamaan (contoh: x² + y² = 25):</label>
+            <input type="text" id="equation" placeholder="x² + y² = 25">
+            <button onclick="analyzeEquation()">Analisis</button>
+        </div>
+
+        <div class="analysis-section">
+            <h2>Analisis Unsur Persamaan</h2>
+            <p id="analysis-result"></p>
+        </div>
+
+        <div class="graph-section">
+            <h2>Grafik Persamaan</h2>
+            <canvas id="graphCanvas" width="500" height="500"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
